@@ -1,5 +1,6 @@
 import "./Results.css";
 import React from "react";
+import Synonyms from "./Synonyms";
 
 export default function Results({ JSON }) {
   if (JSON) {
@@ -12,6 +13,7 @@ export default function Results({ JSON }) {
             <div key={index}>
               <h2>{definition.partOfSpeech}</h2>
               <p>{definition.definitions[0].definition}</p>
+              <Synonyms synonymArray={definition.definitions[0].synonyms} />
             </div>
           );
         })}
