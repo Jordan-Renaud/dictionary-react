@@ -8,6 +8,7 @@ export default function Results({ JSON }) {
       <div>
         <h1>{JSON[0].word}</h1>
         <p>{JSON[0].phonetics[0].text}</p>
+        <a href={JSON[0].phonetics[0].audio}>Listen Here</a>
         {JSON[0].meanings.map((definition, index) => {
           return (
             <div key={index}>
