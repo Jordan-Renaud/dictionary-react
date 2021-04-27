@@ -1,0 +1,26 @@
+.App {
+  background-image: url("screen.jpg");
+  background-position: center;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.App footer {
+  position: absolute;
+  bottom: 10vh;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15rem;
+
+  color: #00cc00;
+  text-shadow: 0 0 0.15em rgb(0, 224, 0);
+  filter: blur(0.002em);
+  font-family: monospace;
+  font-size: 1rem;
+}

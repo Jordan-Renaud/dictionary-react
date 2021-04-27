@@ -1,0 +1,50 @@
+.Dictionary {
+  background-image: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.82) 100%
+    ),
+    url("green-static.jpg");
+
+  background-size: cover;
+  height: 88vh;
+  margin-top: 4.5vh;
+  margin-left: 9vw;
+  margin-right: 31vw;
+
+  border-radius: 6rem;
+
+  color: #00cc00;
+  text-shadow: 0 0 0.15em rgb(0, 224, 0);
+  filter: blur(0.002em);
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+.Dictionary .search {
+  padding-top: 4vh;
+  padding-left: 4vw;
+}
+
+.Dictionary .search input {
+  background: transparent;
+  border: none;
+  caret-color: transparent;
+  animation: blink 1s step-end infinite;
+  border-bottom: 2px solid green;
+  width: 1.5ch;
+}
+
+.Dictionary .search input:focus {
+  outline: none;
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #00cc00;
+  }
+}

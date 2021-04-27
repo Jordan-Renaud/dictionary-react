@@ -1,0 +1,14 @@
+.Photos .photo-filter {
+  height: 12vh;
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+
+.Photos .filter-background {
+  margin: 1vw;
+  display: inline-block;
+  background: green;
+  opacity: 0.7;
+  height: 12vh;
+  position: relative;
+}
