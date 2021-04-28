@@ -12,6 +12,7 @@ export default function Photos({ photoArray }) {
             <div className="filter-background">
               <img
                 key={index}
+                alt="definition"
                 className="photo-filter"
                 src={photo.src.landscape}
               />

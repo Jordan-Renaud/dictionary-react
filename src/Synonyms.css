@@ -1,0 +1,11 @@
+.Synonyms .list-item {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 1.5rem;
+}
+
+.Synonyms {
+  margin: 0;
+  padding-left: 0;
+  padding-top: 1rem;
+}

@@ -24,3 +24,7 @@
   font-family: monospace;
   font-size: 1rem;
 }
+
+.App a {
+  color: #00cc00;
+}

@@ -7,7 +7,6 @@ import Photos from "./Photos";
 export default function Dictionary() {
   let [word, setWord] = useState("");
   let [definition, setDefinition] = useState(null);
-  let [loaded, setLoaded] = useState(false);
   let [photos, setPhotos] = useState(null);
 
   function handleWordChange(event) {
@@ -43,8 +42,10 @@ export default function Dictionary() {
           <input type="search" onChange={handleWordChange} />
         </form>
       </div>
-      <Results JSON={definition} />
-      <Photos photoArray={photos} />
+      <div className="output">
+        <Results JSON={definition} />
+        <Photos photoArray={photos} />
+      </div>
     </div>
   );
 }
